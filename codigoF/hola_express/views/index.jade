@@ -1,0 +1,21 @@
+html
+  head
+    title Pag con JADE
+  body
+        - var arreglo = [1,2,3,4,5];
+        each item in arreglo
+            p= item
+            case item
+                when 1
+                    p CASO 1
+                when 2
+                    p CASO 2
+                when 3
+                    p CASO 3
+                when 4
+                    p CASO 4
+                default
+                    p CASO 5        
+
+        //- for (var i = arreglo.length - 1; i>= 0; i--)
+        //p= arreglo[i]
